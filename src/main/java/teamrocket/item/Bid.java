@@ -28,9 +28,9 @@ public class Bid implements Offer {
     public String toString() {
         StringBuilder string = new StringBuilder();
         string.append("\t\t");
-        string.append(size);
+        string.append(size());
         string.append("\t\t");
-        string.append(bid);
+        string.append(value());
         string.append("\n");
         return string.toString();
     }

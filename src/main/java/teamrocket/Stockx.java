@@ -1,5 +1,6 @@
 package teamrocket;
 
+import teamrocket.criteria.Asks;
 import teamrocket.criteria.Bids;
 import teamrocket.criteria.Criteria;
 import teamrocket.item.Ask;
@@ -76,17 +77,17 @@ public class Stockx {
         Criteria bids = new Bids();
         System.out.println("\n\t\t All BIDS");
         bids.checkCriteria(sneaker).forEach(System.out::print);
-//
-//        /**
-//         * Crea el filtro "Asks" que filtra
-//         * solo las asks de entre las
-//         * offers de la zapatilla.
-//         */
-//
-//        Criteria asks = new Asks();
-//        System.out.println("\n\t\t All ASKS");
-//        asks.checkCriteria(sneaker).forEach(System.out::print);
-//
+
+        /**
+         * Crea el filtro "Asks" que filtra
+         * solo las asks de entre las
+         * offers de la zapatilla.
+         */
+
+        Criteria asks = new Asks();
+        System.out.println("\n\t\t All ASKS");
+        asks.checkCriteria(sneaker).forEach(System.out::print);
+
 //        /**
 //         * Muestra la bid maxima
 //         * de la zapatilla.
