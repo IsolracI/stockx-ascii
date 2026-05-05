@@ -13,7 +13,7 @@ public class MaxBid implements Criteria {
 
     @Override
     public List<Offer> checkCriteria(Item item) {
-        Bids bids = new Bids();
+        Criteria bids = new Bids();
         List<Offer> itemBids = bids.checkCriteria(item);
 
         itemBids.sort(Comparator.comparingInt(Offer::value).reversed());

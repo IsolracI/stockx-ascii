@@ -1,9 +1,6 @@
 package teamrocket;
 
-import teamrocket.criteria.Asks;
-import teamrocket.criteria.Bids;
-import teamrocket.criteria.Criteria;
-import teamrocket.criteria.MaxBid;
+import teamrocket.criteria.*;
 import teamrocket.item.*;
 
 import java.util.List;
@@ -106,24 +103,24 @@ public class Stockx {
         sneaker.setBid(maximum.isEmpty()? 0 : maximum.get(0).value());
         System.out.println(Stockx.draw(sneaker));
 
-//        /**
-//         * Muestra la ask minima
-//         * de la zapatilla.
-//         *
-//         * Crea el filtro MinAsk que filtra
-//         * el minimo de las asks de la zapatilla.
-//         * Devuelve la ask minima como unico
-//         * elemento de una lista de offers.
-//         *
-//         * Guarda esta ask minima en la propiedad
-//         * ask de sneaker.
-//         */
-//
-//        Criteria minAsk = new MinAsk();
-//        List<Offer> minimum = minAsk.checkCriteria(sneaker);
-//        sneaker.setAsk(minimum.isEmpty()? 0 : minimum.get(0).value());
-//        System.out.println(Stockx.draw(sneaker));
-//
+        /**
+         * Muestra la ask minima
+         * de la zapatilla.
+         *
+         * Crea el filtro MinAsk que filtra
+         * el minimo de las asks de la zapatilla.
+         * Devuelve la ask minima como unico
+         * elemento de una lista de offers.
+         *
+         * Guarda esta ask minima en la propiedad
+         * ask de sneaker.
+         */
+
+        Criteria minAsk = new MinAsk();
+        List<Offer> minimum = minAsk.checkCriteria(sneaker);
+        sneaker.setAsk(minimum.isEmpty()? 0 : minimum.get(0).value());
+        System.out.println(Stockx.draw(sneaker));
+
 //        /**
 //         * Añade ventas (sales) de
 //         * una zapatilla a sus offers.
