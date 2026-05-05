@@ -136,16 +136,16 @@ public class Stockx {
         sneaker.add(new Sale("13", 360));
         sneaker.add(new Sale("13", 372));
 
-//        /**
-//         * Crear el filtro "Sales" que filtra
-//         * solo las ventas /sales de entre las
-//         * offers de la zapatilla.
-//         */
-//
-//        Criteria sales = new Sales();
-//        System.out.println("\n\t\t All SALES");
-//        sales.checkCriteria(sneaker).forEach(System.out::print);
-//
+        /**
+         * Crear el filtro "Sales" que filtra
+         * solo las ventas /sales de entre las
+         * offers de la zapatilla.
+         */
+
+        Criteria sales = new Sales();
+        System.out.println("\n\t\t All SALES");
+        sales.checkCriteria(sneaker).forEach(System.out::print);
+
 //        /**
 //         * Crea un filtro que devuelva
 //         * la ULTIMA de las ventas (que

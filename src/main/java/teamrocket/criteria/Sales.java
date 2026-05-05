@@ -1,26 +1,27 @@
 package teamrocket.criteria;
 
-import teamrocket.item.Ask;
+import teamrocket.item.Bid;
 import teamrocket.item.Item;
 import teamrocket.item.Offer;
+import teamrocket.item.Sale;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Asks implements Criteria{
+public class Sales implements Criteria {
 
-    public Asks() {}
+    public  Sales() {}
 
     @Override
     public List<Offer> checkCriteria(Item item) {
-        List<Offer> asksList = new ArrayList<>();
+        List<Offer> salesList = new ArrayList<>();
 
         for (Offer offer : item.offers()) {
-            if (offer instanceof Ask) {
-                asksList.add(offer);
+            if (offer instanceof Sale) {
+                salesList.add(offer);
             }
         }
 
-        return asksList;
+        return salesList;
     }
 }
