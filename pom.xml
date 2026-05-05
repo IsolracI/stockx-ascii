@@ -68,7 +68,7 @@
             <configuration>
                 <archive>
                     <manifest>
-                        <mainClass>teamrocket.App</mainClass>
+                        <mainClass>teamrocket.Stockx</mainClass>
                     </manifest>
                 </archive>
             </configuration>
