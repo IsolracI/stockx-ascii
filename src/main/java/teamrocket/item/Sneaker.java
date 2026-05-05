@@ -6,7 +6,7 @@ import java.util.List;
 public class Sneaker implements Item {
     private final String style;
     private final String name;
-    private List<Offer> offers = new ArrayList<Offer>();
+    private List<Offer> offers = new ArrayList<>();
     private int sale;
     private int ask;
     private int bid;

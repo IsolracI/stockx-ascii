@@ -23,4 +23,15 @@ public class Bid implements Offer {
     public int compareTo(Offer offer) {
         return this.bid.compareTo(offer.value());
     }
+
+    @Override
+    public String toString() {
+        StringBuilder string = new StringBuilder();
+        string.append("\t\t");
+        string.append(size);
+        string.append("\t\t");
+        string.append(bid);
+        string.append("\n");
+        return string.toString();
+    }
 }
