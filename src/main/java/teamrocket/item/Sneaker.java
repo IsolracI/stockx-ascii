@@ -1,10 +1,12 @@
 package teamrocket.item;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Sneaker implements Item {
     private final String style;
     private final String name;
+    private List<Offer> offers = new ArrayList<Offer>();
     private int sale;
     private int ask;
     private int bid;
@@ -54,16 +56,14 @@ public class Sneaker implements Item {
         return this.ask;
     }
 
-
-
     @Override
     public void add(Offer offer) {
-
+        offers().add(offer);
     }
 
     @Override
     public List<Offer> offers() {
-        return List.of();
+        return this.offers;
     }
 
     @Override
